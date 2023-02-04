@@ -1,0 +1,37 @@
+.modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%;
+    box-shadow: -5px 44px 55px 16px $clr-modal-box-shadow;
+
+    header,
+    footer {
+        background-color: $clr-purple;
+    }
+
+    .modal-card-body {
+        background-color: $clr-modal-content-bgc;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 20px;
+    }
+
+    .success {
+        color: $clr-white;
+        background-color: $clr-modal-success-btn;
+    }
+
+    .close {
+        transition: 0.4s;
+
+        &:hover {
+            transition: 0.4s;
+            background-color: $clr-red;
+        }
+    }
+
+}
